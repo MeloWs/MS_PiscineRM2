@@ -80,18 +80,40 @@ export default function App() {
         <ScrollView>
           <View
             style={{
-              //height: 330,
+              height: 300,
               width: "90%",
               backgroundColor: "white",
-              marginLeft: 15,
               borderRadius: 20,
+              marginBottom: 20,
+              alignSelf: "center",
             }}
           >
             <Image
               source={require("./assets/img/abstract_bg.jpg")}
               style={{
                 height: 231,
-                width: 345,
+                width: "100%",
+                resizeMode: "cover",
+                borderTopLeftRadius: 20,
+                borderTopRightRadius: 20,
+              }}
+            />
+          </View>
+          <View
+            style={{
+              height: 300,
+              width: "90%",
+              backgroundColor: "white",
+
+              borderRadius: 20,
+              alignSelf: "center",
+            }}
+          >
+            <Image
+              source={require("./assets/img/abstract_bg.jpg")}
+              style={{
+                height: 231,
+                width: "100%",
                 resizeMode: "cover",
                 borderTopLeftRadius: 20,
                 borderTopRightRadius: 20,

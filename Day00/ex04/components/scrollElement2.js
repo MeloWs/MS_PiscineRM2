@@ -10,10 +10,11 @@ export default function ScrollElement2({
   return (
     <View
       style={{
+        //height: 330,
         backgroundColor: "white",
         marginLeft: 15,
         borderRadius: 20,
-        paddingBottom: 20,
+        paddingBottom: 90,
       }}
     >
       <Image
@@ -26,7 +27,7 @@ export default function ScrollElement2({
           borderTopRightRadius: 20,
         }}
       />
-      <View style={{ flexDirection: "row", padding: 15 }}>
+      <View style={{ flexDirection: "row", padding: 20 }}>
         <Image
           source={imgIcon}
           style={{
