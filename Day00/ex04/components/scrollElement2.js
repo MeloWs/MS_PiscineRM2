@@ -10,10 +10,10 @@ export default function ScrollElement2({
   return (
     <View
       style={{
-        height: 330,
         backgroundColor: "white",
         marginLeft: 15,
         borderRadius: 20,
+        paddingBottom: 20,
       }}
     >
       <Image
