@@ -24,8 +24,6 @@ export default function App() {
     const datas = await fetch("https://pokeapi.co/api/v2/pokemon?limit=151&offset=0%22");
     const pokemon = await datas.json();
     setData(pokemon.results)
-    //console.log(data)
-    //console.log(pokemon.results)
 
   }, [])
   return (

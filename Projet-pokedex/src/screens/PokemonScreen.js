@@ -12,7 +12,7 @@ import * as Font from "expo-font";
 import AppLoading from "expo-app-loading";
 
 export default function PokemonScreen({ navigation }) {
-  let [fontsLoaded, error] = Font.useFonts({
+  const [fontsLoaded, error] = Font.useFonts({
     PressStart2P: require("../../assets/fonts/PressStart2P-Regular.ttf"),
     DotGothic: require("../../assets/fonts/DotGothic16-Regular.ttf"),
   });
@@ -24,8 +24,6 @@ export default function PokemonScreen({ navigation }) {
     );
     const pokemon = await datas.json();
     setData(pokemon.results);
-    //console.log(data)
-    //console.log(pokemon.results)
   }, []);
   if (fontsLoaded) {
     return (

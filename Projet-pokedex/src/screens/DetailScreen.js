@@ -76,10 +76,10 @@ export default function DetailScreen({ route, navigation }) {
                 }}
                 resizeMode="stretch"
               >
-                <Text style={styles.titleH1}>Infos Pokemon</Text>
+                <Text style={styles.titleH1}>Pokemon Infos</Text>
                 <View style={{ flexDirection: "row", alignItems: "center" }}>
                   <Icon
-                    name="times-circle"
+                    name="bars"
                     type="font-awesome"
                     color="#ffffff"
                     size={27}
@@ -88,7 +88,7 @@ export default function DetailScreen({ route, navigation }) {
                     style={styles.linkBack}
                     onPress={() => navigation.toggleDrawer()}
                   >
-                    list
+                    Menu
                   </Text>
                 </View>
               </ImageBackground>
